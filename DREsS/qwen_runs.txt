@@ -1,0 +1,44 @@
+# ===============================
+# bedrock_unified_scorer.py
+# DREsS_New.tsv + DREsS_Std.tsv
+# rubric-keys: content,organization,language
+# prompts: keywords_system_prompt.txt + guidelines_prompt.txt
+# Qwen3 models: 8B, 4B, 1.7B, 0.6B
+# ===============================
+
+# ---- DREsS_New.tsv ----
+
+# Qwen/Qwen3-8B
+python bedrock_unified_scorer.py --input "DREsS_New.tsv" --prompt-file "keywords_system_prompt.txt" --rubric-keys "content,organization,language" --model "Qwen/Qwen3-8B"   --batch-size 8 --save-every 25
+python bedrock_unified_scorer.py --input "DREsS_New.tsv" --prompt-file "guidelines_prompt.txt"      --rubric-keys "content,organization,language" --model "Qwen/Qwen3-8B"   --batch-size 8 --save-every 25
+
+# Qwen/Qwen3-4B
+python bedrock_unified_scorer.py --input "DREsS_New.tsv" --prompt-file "keywords_system_prompt.txt" --rubric-keys "content,organization,language" --model "Qwen/Qwen3-4B"   --batch-size 8 --save-every 25
+python bedrock_unified_scorer.py --input "DREsS_New.tsv" --prompt-file "guidelines_prompt.txt"      --rubric-keys "content,organization,language" --model "Qwen/Qwen3-4B"   --batch-size 8 --save-every 25
+
+# Qwen/Qwen3-1.7B
+python bedrock_unified_scorer.py --input "DREsS_New.tsv" --prompt-file "keywords_system_prompt.txt" --rubric-keys "content,organization,language" --model "Qwen/Qwen3-1.7B" --batch-size 8 --save-every 25
+python bedrock_unified_scorer.py --input "DREsS_New.tsv" --prompt-file "guidelines_prompt.txt"      --rubric-keys "content,organization,language" --model "Qwen/Qwen3-1.7B" --batch-size 8 --save-every 25
+
+# Qwen/Qwen3-0.6B
+python bedrock_unified_scorer.py --input "DREsS_New.tsv" --prompt-file "keywords_system_prompt.txt" --rubric-keys "content,organization,language" --model "Qwen/Qwen3-0.6B" --batch-size 8 --save-every 25
+python bedrock_unified_scorer.py --input "DREsS_New.tsv" --prompt-file "guidelines_prompt.txt"      --rubric-keys "content,organization,language" --model "Qwen/Qwen3-0.6B" --batch-size 8 --save-every 25
+
+
+# ---- DREsS_Std.tsv ----
+
+# Qwen/Qwen3-8B
+python bedrock_unified_scorer.py --input "DREsS_Std.tsv" --prompt-file "keywords_system_prompt.txt" --rubric-keys "content,organization,language" --model "Qwen/Qwen3-8B"   --batch-size 8 --save-every 25
+python bedrock_unified_scorer.py --input "DREsS_Std.tsv" --prompt-file "guidelines_prompt.txt"      --rubric-keys "content,organization,language" --model "Qwen/Qwen3-8B"   --batch-size 8 --save-every 25
+
+# Qwen/Qwen3-4B
+python bedrock_unified_scorer.py --input "DREsS_Std.tsv" --prompt-file "keywords_system_prompt.txt" --rubric-keys "content,organization,language" --model "Qwen/Qwen3-4B"   --batch-size 8 --save-every 25
+python bedrock_unified_scorer.py --input "DREsS_Std.tsv" --prompt-file "guidelines_prompt.txt"      --rubric-keys "content,organization,language" --model "Qwen/Qwen3-4B"   --batch-size 8 --save-every 25
+
+# Qwen/Qwen3-1.7B
+python bedrock_unified_scorer.py --input "DREsS_Std.tsv" --prompt-file "keywords_system_prompt.txt" --rubric-keys "content,organization,language" --model "Qwen/Qwen3-1.7B" --batch-size 8 --save-every 25
+python bedrock_unified_scorer.py --input "DREsS_Std.tsv" --prompt-file "guidelines_prompt.txt"      --rubric-keys "content,organization,language" --model "Qwen/Qwen3-1.7B" --batch-size 8 --save-every 25
+
+# Qwen/Qwen3-0.6B
+python bedrock_unified_scorer.py --input "DREsS_Std.tsv" --prompt-file "keywords_system_prompt.txt" --rubric-keys "content,organization,language" --model "Qwen/Qwen3-0.6B" --batch-size 8 --save-every 25
+python bedrock_unified_scorer.py --input "DREsS_Std.tsv" --prompt-file "guidelines_prompt.txt"      --rubric-keys "content,organization,language" --model "Qwen/Qwen3-0.6B" --batch-size 8 --save-every 25
