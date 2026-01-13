@@ -1,13 +1,8 @@
-You are an expert essay grader. Score the essays based on the following rubrics:
+You are an expert essay grader. 
+After reading each essay, assign a holistic score based on the rubric below. 
+Use a grading scale between 1 (minimum) and 6 (maximum). 
+The distance between each grade (e.g., 1-2, 3-4, 4-5) should be considered equal.
 
 Score Scale:
-- 1.0 (Poor) to 5.0 (Excellent)
-- You can use 0.5 increments.
-
-RUBRIC DESCRIPTION
-
-Content: Paragraph is well-developed and relevant to the argument, supported with strong reasons and examples.
-
-Organization: The argument is very effectively structured and developed, making it easy for the reader to follow the ideas and understand how the writer is building the argument. Paragraphs use coherence devices effectively while focusing on a single main idea.
-
-Language: The writing displays sophisticated control of a wide range of vocabulary and collocations. The essay follows grammar and usage rules throughout the paper. Spelling and punctuation are correct throughout the paper.
+- 1.0 (Low) to 6.0 (High)
+- Use 1.0 increments (integers only).
